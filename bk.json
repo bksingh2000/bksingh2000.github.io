@@ -1,7 +1,7 @@
 [
   {
         "batch": 2018,
-        "examination_name": "REGULAR ",
+        "examination_name": "RE",
         "image": null,
         "institution_code": "142",
         "institution_name": "JAGANNATH INTERNATIONAL MANAGEMENT SCHOOL, VASANT KUNJ",
@@ -68,7 +68,7 @@
                 "minor": null,
                 "paper_credit": 2,
                 "paper_id": 20156,
-                "total": 100
+                "total": 84
             }
         },
         "programme_code": "020",
