@@ -1,4 +1,4 @@
-[    
+[
   {
         "batch": 2018,
         "examination_name": "REGULAR ",
@@ -6,75 +6,75 @@
         "institution_code": "142",
         "institution_name": "JAGANNATH INTERNATIONAL MANAGEMENT SCHOOL, VASANT KUNJ",
         "marks": {
-            "20101": {
-                "grade": "C",
-                "major": 23,
-                "minor": 23,
-                "paper_credit": 4,
-                "paper_id": 20101,
-                "total": 46
-            },
-            "20103": {
-                "grade": "A",
-                "major": 47,
+            "20102": {
+                "grade": "A+",
+                "major": 55,
                 "minor": 25,
-                "paper_credit": 3,
-                "paper_id": 20103,
-                "total": 72
+                "paper_credit": 4,
+                "paper_id": 20102,
+                "total": 80
             },
-            "20105": {
+            "20104": {
                 "grade": "A",
                 "major": 48,
                 "minor": 25,
-                "paper_credit": 4,
-                "paper_id": 20105,
+                "paper_credit": 3,
+                "paper_id": 20104,
                 "total": 73
             },
-            "20107": {
-                "grade": "A+",
-                "major": 53,
-                "minor": 25,
+            "20106": {
+                "grade": "C",
+                "major": 25,
+                "minor": 22,
                 "paper_credit": 4,
-                "paper_id": 20107,
+                "paper_id": 20106,
+                "total": 47
+            },
+            "20108": {
+                "grade": "A+",
+                "major": 56,
+                "minor": 22,
+                "paper_credit": 4,
+                "paper_id": 20108,
                 "total": 78
             },
-            "20109": {
-                "grade": "B+",
-                "major": 43,
-                "minor": 18,
-                "paper_credit": 4,
-                "paper_id": 20109,
-                "total": 61
-            },
-            "20151": {
+            "20110": {
                 "grade": "O",
-                "major": 54,
-                "minor": 36,
-                "paper_credit": 3,
-                "paper_id": 20151,
+                "major": 65,
+                "minor": 25,
+                "paper_credit": 4,
+                "paper_id": 20110,
                 "total": 90
             },
-            "20153": {
-                "grade": "O",
-                "major": 54,
-                "minor": 38,
+            "20152": {
+                "grade": "A+",
+                "major": 52,
+                "minor": 36,
                 "paper_credit": 3,
-                "paper_id": 20153,
-                "total": 92
+                "paper_id": 20152,
+                "total": 88
             },
-            "20155": {
+            "20154": {
+                "grade": "O",
+                "major": 55,
+                "minor": 35,
+                "paper_credit": 3,
+                "paper_id": 20154,
+                "total": 90
+            },
+            "20156": {
                 "grade": "A+",
                 "major": 84,
                 "minor": null,
                 "paper_credit": 2,
-                "paper_id": 20155,
+                "paper_id": 20156,
                 "total": 84
             }
         },
         "programme_code": "020",
         "programme_name": "BACHELOR OF COMPUTER APPLICATIONS",
         "roll_num": "00714202018",
-        "semester": 1,
+        "semester": 2,
         "student_name": "BADAL KUMAR"
     }
- ]
+]
