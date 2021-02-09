@@ -19,10 +19,9 @@ request.onload = function() {
 
             const image = document.createElement('div')
             image.setAttribute('class', 'fakeimg')
-            image.setAttribute('style', 'height:200px;')
+            image.setAttribute("style", "height:200px;background:url('" + blog.img + "');background-position: center;background-size: cover;")
 
             const content = document.createElement('p')
-                // content.setAttribute('class', 'lead')
             blog.content = blog.content.substring(0, 300)
             content.textContent = `${blog.content}...`
 
@@ -33,8 +32,8 @@ request.onload = function() {
             main.appendChild(content)
         })
     } else {
-        const errorMessage = document.createElement('marquee')
-        errorMessage.textContent = `Gah, it's not working!`
+        const errorMessage = document.createElement('div')
+        errorMessage.textContent = `Something went wrong`
         app.appendChild(errorMessage)
     }
 }
