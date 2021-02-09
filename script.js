@@ -17,7 +17,7 @@ request.onload = function() {
 
             const author = document.createElement('h5')
             author.setAttribute('class', 'capital')
-            author.textContent = blog.owner + ", " + blog.created_at
+            author.textContent = "By " + blog.owner + " on " + blog.created_at
 
             const image = document.createElement('div')
             image.setAttribute('class', 'fakeimg')
