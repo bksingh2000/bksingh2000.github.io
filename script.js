@@ -29,7 +29,7 @@ request.onload = function() {
             content.textContent = `${blog.content}...`
 
             const author = document.createElement('p')
-            author.setAttribute('style', 'font-size: 1.6rem;color: grey;')
+            author.setAttribute('style', 'font-size: 1.6rem;color: wheat;')
             author.textContent = blog.owner
 
             container.appendChild(main)
