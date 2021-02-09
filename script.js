@@ -1,31 +1,42 @@
-const app = document.getElementById('root')
-const container = document.createElement('div')
-container.setAttribute('class', 'container')
-app.appendChild(container)
+const app = document.getElementById('container')
+const header = document.createElement('div')
+header.setAttribute('class', 'page-header')
+
+const page_header = document.createElement('h1')
+page_header.textContent = "Hello World"
+header.appendChild(page_header)
+app.appendChild(header)
 var request = new XMLHttpRequest()
+
 request.open('GET', 'https://blogsadda.herokuapp.com/api/', true)
 
 request.onload = function() {
     var data = JSON.parse(this.response)
     if (request.status >= 200 && request.status < 400) {
         data.forEach((blog) => {
-            const card = document.createElement('div')
-            card.setAttribute('class', 'card')
+            const main = document.createElement('main')
+            main.setAttribute('class', 'container')
 
-            const h1 = document.createElement('h1')
-            h1.textContent = blog.title
+            const main_area = document.createElement('div')
+            main_area.setAttribute('class', 'jumbotron')
 
-            const p = document.createElement('p')
+            const title = document.createElement('h2')
+            title.textContent = blog.title
+
+            const content = document.createElement('p')
+            content.setAttribute('class', 'lead')
             blog.content = blog.content.substring(0, 300)
-            p.textContent = `${blog.content}...`
+            content.textContent = `${blog.content}...`
 
             const author = document.createElement('p')
+            author.setAttribute('style', 'font-size: 1.6rem;color: grey;')
             author.textContent = blog.owner
 
-            container.appendChild(card)
-            card.appendChild(h1)
-            card.appendChild(p)
-            card.appendChild(author)
+            container.appendChild(main)
+            main.appendChild(main_area)
+            main_area.appendChild(title)
+            main_area.appendChild(content)
+            main_area.appendChild(author)
         })
     } else {
         const errorMessage = document.createElement('marquee')
