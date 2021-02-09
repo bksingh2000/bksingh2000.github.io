@@ -12,16 +12,19 @@ request.onload = function() {
             main.setAttribute('class', 'card')
 
             const title = document.createElement('h2')
+            title.setAttribute('class', 't-capital')
             title.textContent = blog.title
 
             const author = document.createElement('h5')
-            author.textContent = blog.owner
+            author.setAttribute('class', 'capital')
+            author.textContent = blog.owner + ", " + blog.created_at
 
             const image = document.createElement('div')
             image.setAttribute('class', 'fakeimg')
             image.setAttribute("style", "height:200px;background:url('" + blog.img + "');background-position: center;background-size: cover;")
 
             const content = document.createElement('p')
+            content.setAttribute('class', 'capital')
             blog.content = blog.content.substring(0, 300)
             content.textContent = `${blog.content}...`
 
@@ -32,8 +35,8 @@ request.onload = function() {
             main.appendChild(content)
         })
     } else {
-        const errorMessage = document.createElement('div')
-        errorMessage.textContent = `Something went wrong`
+        const errorMessage = document.createElement('marquee')
+        errorMessage.textContent = `Gah, it's not working!`
         app.appendChild(errorMessage)
     }
 }
