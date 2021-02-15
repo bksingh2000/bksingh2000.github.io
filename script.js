@@ -11,7 +11,7 @@ function allBlogs() {
         },
         success: function(data) {
             $.each(data.results, function(k, v) {
-                root.innerHTML += "<div class='w3-card-4 w3-margin w3-white'><img src='' style='width:100%;'><div class='w3-container'><h3><b>" + v.title + "</b></h3><h5>" + capitalizeFirstLetter(v.owner) + ", <span class='w3-opacity'>" + v.created_at + "</span></h5></div><div class='w3-container'><p>" + v.content.substring(0, 300) + "...</p><div class='w3-row'><div class='w3-col m8 s12'><p><form action='blog.html' method='GET'><input type='hidden' name='id' value='" + v.id + "'><button class='w3-button w3-padding-large w3-white w3-border'><b>READ MORE »</b></button></form></p></div><div class='w3-col m4 w3-hide-small'><p><span class='w3-padding-large w3-right'><b>Comments  </b> <span class='w3-tag'>" + v.comment + "</span></span></p></div></div></div></div><hr>"
+                root.innerHTML += "<div class='w3-card-4 w3-margin w3-white'><img src='' style='width:100%;'><div class='w3-container'><h3><b>" + v.title + "</b></h3><h5>" + capitalizeFirstLetter(v.owner) + ", <span class='w3-opacity'>" + v.created_at + "</span></h5></div><div class='w3-container'><p>" + v.content.substring(0, 300) + "...</p><div class='w3-row'><div class='w3-col m6 s5'><p><form action='blog.html' method='GET'><input type='hidden' name='id' value='" + v.id + "'><button class='w3-button w3-padding-large w3-white w3-border'><b>READ MORE »</b></button></form></p></div><div class='w3-col m6 s7'><p><span class='w3-padding-large w3-right'><b>Comments  </b> <span class='w3-tag'>" + v.comment + "</span></span></p></div></div></div></div><hr>"
             })
         },
         complete: function() {
