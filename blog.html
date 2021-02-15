@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="style.css">
+<style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        font-family: "Raleway", sans-serif
+    }
+</style>
+
+<body class="w3-light-grey">
+
+    <!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+    <!-- <div class="w3-content" style="max-width:1400px"> -->
+    <div class="w3-content" style="max-width:800px">
+        <!-- Grid -->
+        <div class="w3-row">
+
+            <!-- Blog entries -->
+            <div class="w3-col l12 s12">
+                <!-- Blog entry -->
+                <div class="w3-card-4 w3-margin w3-white">
+                    <img id="img" alt="" style="width:100%">
+                    <div class="w3-container">
+                        <h3 id="title"><b></b></h3>
+                        <h5 id="info"></h5>
+                    </div>
+
+                    <div class="w3-container">
+                        <p id="content"></p>
+                        <div class="w3-row">
+                            <h3>Comment</h3>
+                            <input type="text" placeholder="Name" id="name" name="name">
+                            <input type="text" placeholder="Email address" id="email" name="email">
+                            <textarea name="msg" placeholder="Write something.." style="height:200px" id="msg" name="msg"></textarea>
+                            <div class="alert success" id="alert">
+                            </div>
+                            <input type="submit" id="submit" value="Send Message">
+                        </div>
+                    </div>
+                </div>
+                <!-- END BLOG ENTRIES -->
+            </div>
+
+            <!-- END GRID -->
+        </div>
+
+        <!-- END w3-content -->
+    </div>
+
+    <script src="jquery.min.js"></script>
+    <script src="utils.js"></script>
+    <script src="blog_script.js"></script>
+    <script>
+        var url = window.location.href;
+        var captured = /id=([^&]+)/.exec(url)[1]; // Value is in [1] ('384' in our case)
+        var result = captured ? captured : 'myDefaultValue';
+        blogById(result)
+    </script>
+
+
+</body>
+
+</html>
