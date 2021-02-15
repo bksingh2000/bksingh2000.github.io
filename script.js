@@ -36,7 +36,7 @@ function allBlogs() {
         },
         success: function(data) {
             $.each(data.results, function(k, v) {
-                root.innerHTML += "<div class='card'><h2 class='t-capital'>" + v.title + "</h2><h5 class='author'>" + "Puplished by " + capitalizeFirstLetter(v.owner) + " on " + v.created_at + "</h5><div class='img' style='background:url('" + v.img + "');background-position: center;background-size: cover;'></div><p class='capital content'>" + v.content.substring(0, 300) + "...<a href='#!' data-identity='" + v.id + "'>Read More</a></p></div>"
+                root.innerHTML += "<div class='card'><h2 class='t-capital'>" + v.title + "</h2><h5 class='author'>" + "Puplished by " + capitalizeFirstLetter(v.owner) + " on " + v.created_at + "</h5><div class='img' style='background:url(" + v.img + ");background-position: center;background-size: cover;'></div><p class='capital content'>" + v.content.substring(0, 300) + "...<a href='#!' data-identity='" + v.id + "'>Read More</a></p></div>"
             })
         },
         complete: function() {
@@ -110,7 +110,7 @@ $(document).ready(function() {
         n = $('#name').val().trim();
         e = $('#email').val().trim();
         m = $('#msg').val().trim();
-        if (n == '' && e == '' && m == '') {
+        if (n == '' || e == '' || m == '') {
             alert.innerHTML = "<span class='closebtn'>&times;</span>Fill all the details"
             alert.style.backgroundColor = "#ff9800"
             alert.style.display = "block"
