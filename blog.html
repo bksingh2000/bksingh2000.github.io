@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
+<title>My Blogs</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -42,10 +42,17 @@ and is wrapped around the whole page content, except for the footer in this exam
                             <h3>Comment</h3>
                             <input type="text" placeholder="Name" id="name" name="name">
                             <input type="text" placeholder="Email address" id="email" name="email">
-                            <textarea name="msg" placeholder="Write something.." style="height:200px" id="msg" name="msg"></textarea>
-                            <div class="alert success" id="alert">
-                            </div>
-                            <input type="submit" id="submit" value="Send Message">
+                            <textarea name="msg" placeholder="Write something.." style="height:200px" id="body" name="msg"></textarea>
+                            <div class="alert success" id="alert"></div>
+                            <input type="submit" id="submit" value="Add Comment">
+                        </div>
+                        <div class="w3-row">
+
+                            <h3 id="commenet_count"></h3>
+
+                            <ul class="w3-ul w3-white" id='userComments'>
+
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -61,12 +68,6 @@ and is wrapped around the whole page content, except for the footer in this exam
     <script src="jquery.min.js"></script>
     <script src="utils.js"></script>
     <script src="blog_script.js"></script>
-    <script>
-        var url = window.location.href;
-        var captured = /id=([^&]+)/.exec(url)[1]; // Value is in [1] ('384' in our case)
-        var result = captured ? captured : 'myDefaultValue';
-        blogById(result)
-    </script>
 
 
 </body>
