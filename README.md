@@ -1,4 +1,4 @@
-A dynamic blog system hosted on Github
+A dynamic blog system hosted on Github, you can see it here: https://bksingh2000.github.io/
 
 I've created my own Blog API and hosted on Heroku Server from there i fetch the end points using jQuery and show all the blogs.
 All the features are working (like Comment Box, Contact Us, New Blog).
